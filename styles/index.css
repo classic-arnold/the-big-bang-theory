@@ -1,0 +1,112 @@
+/* Variables */
+:root {
+    --primary-color: #C9232A;
+    --white-color: #FFFFFF;
+
+    --header-height: 150px;
+}
+
+/* Globals */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+p,
+a {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: revert;
+}
+
+/* Utils */
+.full-page {
+    min-height: 100vh;
+}
+
+.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Components */
+.header {
+    position: absolute;
+    width: 100%;
+    height: var(--header-height);
+
+    display: flex;
+    align-items: center;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1;
+}
+
+/* Components:menu */
+.menu {
+    display: flex;
+    column-gap: 3rem;
+
+    list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        display: grid;
+        gap: 2rem;
+
+        height: 0;
+
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+
+        background: var(--primary-color);
+
+        width: 100%;
+
+        transition: height 1s ease-in;
+    }
+
+    .menu .menu-item a {
+        color: var(--white-color);
+    }
+}
+
+.menu-button-container {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu-button-container {
+        display: block;
+    }
+}
+
+.menu-button-container #menu-close-button {
+    display: none;
+}
