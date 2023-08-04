@@ -25,7 +25,8 @@ function closeMenu() {
 document.addEventListener("DOMContentLoaded", function (e) {
     document.querySelectorAll('.menu-item a[href^="#"]').forEach(link => {
         link.addEventListener('click', function (e) {
-            hideElem("menu");
+            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (width < 480) closeMenu();
         });
     });
 })
