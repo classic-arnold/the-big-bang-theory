@@ -3,7 +3,7 @@
 
 <head>
     <title>The Big Bang Theory</title>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,50 +24,241 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="container header-inner">
-        <img src="images/logo.png" width="100px" height="auto">
-        <nav class="menu-container">
-            <button id="menu-button" onClick="openMenu()">
-                <img src="icons/menu.svg" width="50px" height="auto"/>
-            </button>
-            <ul id="menu" class="menu">
-                <li class="align-center">
-                    <button id="menu-close-button" onClick="closeMenu()">
-                        <img src="icons/close.svg" width="50px" height="auto"/>
-                    </button>
-                </li>
-                <li class="menu-item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#task">Cast</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#episodes">Favorite Episodes</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#clips">Clips</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#quotes">Quotes</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#crew">Crew</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <section class="hero full-page">
-        <img id="desktop-hero-image" class="hero-image" src="images/group.png">
-        <img id="mobile-hero-image" class="hero-image" src="images/sheldon.png">
-    </section>
-</main>
-<footer>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="/">
+                <img src="images/logo.png" width="100px" height="auto">
+            </a>
+            <nav class="menu-container">
+                <button id="menu-button" onClick="openMenu()">
+                    <img src="icons/menu.svg" width="50px" height="auto" />
+                </button>
+                <ul id="menu" class="menu">
+                    <li class="align-center">
+                        <button id="menu-close-button" onClick="closeMenu()">
+                            <img src="icons/close.svg" width="50px" height="auto" />
+                        </button>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#cast">Cast</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#episodes">Favorite Episodes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#clips">Clips</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#quotes">Quotes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#crew">Crew</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container hero full-page">
+            <img id="desktop-hero-image" class="hero-image" src="images/group.png">
+            <img id="mobile-hero-image" class="hero-image" src="images/sheldon.png">
+        </section>
+        <section id="about" class="container py-4">
+            <h1>About the Show</h1>
+            <div class="max-w-lg">
+                <p>
+                    The Big Bang Theory is an American television sitcom created by Chuck Lorre and Bill Prady, both of
+                    whom
+                    served as executive producers on the series, along with Steven Molaro. The three of them also served
+                    as
+                    head writers. It aired on CBS on September 24, 2007 to May 16, 2019, running for 12 seasons and 279
+                    episodes.
+                </p>
+                <p>
+                    The show originally centered on five characters living in Pasadena, California: Leonard Hofstadter
+                    (Johnny Galecki) and Sheldon Cooper (Jim Parsons), both physicists at Caltech, who share an
+                    apartment;
+                    Penny (Kaley Cuoco), a waitress and aspiring actress who lives across the hall; and Leonard and
+                    Sheldon's similarly geeky and socially awkward friends and coworkers, aerospace engineer Howard
+                    Wolowitz
+                    (Simon Helberg) and astrophysicist Raj Koothrappali (Kunal Nayyar). Over time, supporting
+                    characters were promoted to starring roles, including neuroscientist Amy Farrah Fowler (Mayim
+                    Bialik),
+                    microbiologist Bernadette Rostenkowski (Melissa Rauch), and comic book store owner Stuart Bloom
+                    (Kevin
+                    Sussman).
+                </p>
+                <p>
+                    The show was filmed in front of a live audience and produced by Chuck Lorre Productions and Warner
+                    Bros.
+                    Television. It received mixed reviews throughout its first season, but reception was more favorable
+                    in
+                    the second and third seasons. Despite early mixed reviews, seven seasons were ranked within the top
+                    ten
+                    of the final season ratings, and it ultimately reached the no. 1 spot in its eleventh season. It was
+                    nominated for the Emmy Award for Outstanding Comedy Series from 2011 to 2014 and won the Emmy Award
+                    for
+                    Outstanding Lead Actor in a Comedy Series four times for Parsons. In total, it won seven Emmy Awards
+                    from 46 nominations. Parsons also won the Golden Globe for Best Actor in a Television Comedy Series
+                    in
+                    2011. In 2017, the series spawned a prequel series, Young Sheldon, based on Parsons' character
+                    Sheldon
+                    Cooper; it also airs on CBS.
+                </p>
+            </div>
+        </section>
+        <section id="cast" class="container py-4">
+            <h1>The Cast</h1>
+            <div>
+                <div class="cast-card mb-4">
+                    <img class="cast-card-image" src="images/cast/leonard.png">
+                    <div>
+                        <h3>Leonard Hofstadter</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Johnny Galecki
+                            </div>
+                        </div>
+                        <p>
+                            Leonard Leakey Hofstadter, Ph.D., is the main protagonist of The Big Bang Theory.
+                            He is an experimental physicist at the California Institute of Technology who formerly
+                            roomed with Sheldon Cooper in Apartment 4A. Now he and his wife Penny live in that
+                            apartment. They also formerly lived in Penny's (now Sheldon and Amy's) apartment
+                            Apartment 4B. Originally from New Jersey, Leonard attended Princeton University and
+                            was twenty-four years old when he received his doctorate with a Dissertation of the Year
+                            award for experimental particle physics.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card reverse mb-4">
+                    <img class="cast-card-image" src="images/cast/sheldon.webp">
+                    <div>
+                        <h3>Sheldon Cooper</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Jim Parsons
+                            </div>
+                        </div>
+                        <p>
+                            Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D., is a Caltech theoretical
+                            physicist. Next to his best friend Leonard Hofstadter, he’s the main protagonist of The Big
+                            Bang Theory. Originally from East Texas, Sheldon started college at the age of 11, receiving
+                            his first Ph.D. at the age of 16. As a kid, Sheldon was involved in numerous experiments as
+                            a "wunderkind," such as his plan to provide free electricity for his hometown by building a
+                            nuclear reactor - a plan that government pen-pushers stopped, claiming that it is illegal to
+                            store yellowcake uranium in a garden shed.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card mb-4">
+                    <img class="cast-card-image" src="images/cast/leonard.png">
+                    <div>
+                        <h3>Leonard Hofstadter</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Johnny Galecki
+                            </div>
+                        </div>
+                        <p>
+                            Leonard Leakey Hofstadter, Ph.D., is the main protagonist of The Big Bang Theory.
+                            He is an experimental physicist at the California Institute of Technology who formerly
+                            roomed with Sheldon Cooper in Apartment 4A. Now he and his wife Penny live in that
+                            apartment. They also formerly lived in Penny's (now Sheldon and Amy's) apartment
+                            Apartment 4B. Originally from New Jersey, Leonard attended Princeton University and
+                            was twenty-four years old when he received his doctorate with a Dissertation of the Year
+                            award for experimental particle physics.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card reverse mb-4">
+                    <img class="cast-card-image" src="images/cast/sheldon.webp">
+                    <div>
+                        <h3>Sheldon Cooper</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Jim Parsons
+                            </div>
+                        </div>
+                        <p>
+                            Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D., is a Caltech theoretical
+                            physicist. Next to his best friend Leonard Hofstadter, he’s the main protagonist of The Big
+                            Bang Theory. Originally from East Texas, Sheldon started college at the age of 11, receiving
+                            his first Ph.D. at the age of 16. As a kid, Sheldon was involved in numerous experiments as
+                            a "wunderkind," such as his plan to provide free electricity for his hometown by building a
+                            nuclear reactor - a plan that government pen-pushers stopped, claiming that it is illegal to
+                            store yellowcake uranium in a garden shed.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card mb-4">
+                    <img class="cast-card-image" src="images/cast/leonard.png">
+                    <div>
+                        <h3>Leonard Hofstadter</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Johnny Galecki
+                            </div>
+                        </div>
+                        <p>
+                            Leonard Leakey Hofstadter, Ph.D., is the main protagonist of The Big Bang Theory.
+                            He is an experimental physicist at the California Institute of Technology who formerly
+                            roomed with Sheldon Cooper in Apartment 4A. Now he and his wife Penny live in that
+                            apartment. They also formerly lived in Penny's (now Sheldon and Amy's) apartment
+                            Apartment 4B. Originally from New Jersey, Leonard attended Princeton University and
+                            was twenty-four years old when he received his doctorate with a Dissertation of the Year
+                            award for experimental particle physics.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card reverse mb-4">
+                    <img class="cast-card-image" src="images/cast/sheldon.webp">
+                    <div>
+                        <h3>Sheldon Cooper</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Jim Parsons
+                            </div>
+                        </div>
+                        <p>
+                            Sheldon Lee Cooper, B.Sc., M.Sc., M.A., Ph.D., Sc.D., is a Caltech theoretical
+                            physicist. Next to his best friend Leonard Hofstadter, he’s the main protagonist of The Big
+                            Bang Theory. Originally from East Texas, Sheldon started college at the age of 11, receiving
+                            his first Ph.D. at the age of 16. As a kid, Sheldon was involved in numerous experiments as
+                            a "wunderkind," such as his plan to provide free electricity for his hometown by building a
+                            nuclear reactor - a plan that government pen-pushers stopped, claiming that it is illegal to
+                            store yellowcake uranium in a garden shed.
+                        </p>
+                    </div>
+                </div>
+                <div class="cast-card mb-4">
+                    <img class="cast-card-image" src="images/cast/leonard.png">
+                    <div>
+                        <h3>Leonard Hofstadter</h3>
+                        <div class="badge-container">
+                            <div class="cast-badge">
+                                Played by Johnny Galecki
+                            </div>
+                        </div>
+                        <p>
+                            Leonard Leakey Hofstadter, Ph.D., is the main protagonist of The Big Bang Theory.
+                            He is an experimental physicist at the California Institute of Technology who formerly
+                            roomed with Sheldon Cooper in Apartment 4A. Now he and his wife Penny live in that
+                            apartment. They also formerly lived in Penny's (now Sheldon and Amy's) apartment
+                            Apartment 4B. Originally from New Jersey, Leonard attended Princeton University and
+                            was twenty-four years old when he received his doctorate with a Dissertation of the Year
+                            award for experimental particle physics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-</footer>
+    </footer>
 </body>
 
 </html>

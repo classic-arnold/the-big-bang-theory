@@ -26,6 +26,10 @@ a, button {
     cursor: pointer;
 }
 
+p, h1, h2, h3 {
+    margin-bottom: revert;
+}
+
 /* Remove list styles (bullets/numbers) */
 ol, ul, menu {
     list-style: none;
