@@ -18,7 +18,8 @@ body {
 
 p,
 a,
-blockquote {
+blockquote,
+button {
     font-size: 24px;
 }
 
@@ -38,7 +39,8 @@ h3 {
 
     p,
     a,
-    blockquote {
+    blockquote,
+    button {
         font-size: 16px;
     }
 
@@ -78,6 +80,10 @@ h3 {
 
 .align-center {
     text-align: center;
+}
+
+.mx-auto {
+    margin: auto;
 }
 
 .py-4 {
@@ -305,4 +311,38 @@ h3 {
 .clips {
     width: 100vw;
     height: 100vh;
+}
+
+.quote-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url("../images/quote-bg.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-container {
+    padding: 15px;
+    background: var(--primary-color);
+    border-radius: 15px;
+}
+
+.quote-container blockquote {
+    font-size: 128px;
+}
+@media screen and (max-width: 480px) {
+    .quote-container blockquote {
+        font-size: 64px;
+    }
+}
+
+.option-button {
+    display: block;
+
 }
