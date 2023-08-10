@@ -28,7 +28,8 @@ button {
 
 ol,
 ul,
-menu {
+menu,
+blockquote {
     margin: unset;
     list-style: unset;
 }

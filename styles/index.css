@@ -297,9 +297,12 @@ h3 {
 
 .clips {
     max-width: 100%;
+    width: 560px;
+    height: 315px;
 }
 
 .quote-section {
+    width: 100%;
     min-height: 100vh;
 
     display: flex;
@@ -320,22 +323,24 @@ h3 {
 }
 
 .quote-container {
+    width: 100%;
     padding: 15px;
     background: var(--primary-color);
     border-radius: 15px;
+
+    text-align: center;
 }
 
 .quote-container blockquote {
-    font-size: 128px;
+    font-size: 5em;
 }
 
 @media screen and (max-width: 480px) {
     .quote-container blockquote {
-        font-size: 64px;
+        font-size: 1.5em;
     }
 }
 
 .option-button {
     display: block;
-
 }
