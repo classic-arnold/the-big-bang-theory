@@ -8,19 +8,27 @@
 }
 
 body {
-    margin: 0;
+    margin: unset;
 }
 
-/* Reapply the pointer cursor for anchor tags */
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+button {
+    border: 0;
+    background: unset;
+}
+
 a,
 button {
-    all: unset;
     cursor: pointer;
 }
 
-/* Remove list styles (bullets/numbers) */
 ol,
 ul,
 menu {
-    list-style: none;
+    margin: unset;
+    list-style: unset;
 }
