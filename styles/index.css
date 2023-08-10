@@ -217,11 +217,12 @@ h3 {
         display: block;
     }
 }
-
 .awards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+
+    justify-content: center;
 }
 
 .award {
