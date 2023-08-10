@@ -106,8 +106,6 @@ h3 {
 
     display: flex;
     align-items: center;
-
-    /* background: var(--white-color); */
 }
 
 .header-inner {
@@ -176,7 +174,9 @@ h3 {
     justify-content: center;
     align-items: end;
 
-    background: var(--grey-color);
+    background: url("../images/galaxy.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-image {
@@ -216,26 +216,10 @@ h3 {
     }
 }
 
-.about-container {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
 .awards-container {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-}
-
-@media screen and (max-width: 480px) {
-    .about-container {
-        grid-template-columns: auto;
-    }
-
-    .awards-container {
-        grid-template-columns: auto;
-        justify-content: center;
-    }
 }
 
 .award {
