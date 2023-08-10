@@ -337,12 +337,18 @@ h3 {
 }
 
 .quote-container blockquote {
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 480px) {
     .quote-container blockquote {
-        font-size: 1.5em;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .quote-container blockquote {
+        font-size: 1.5rem;
     }
 }
 
