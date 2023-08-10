@@ -295,10 +295,16 @@ h3 {
     color: var(--white-color);
 }
 
+.clips-container {
+    display: flex;
+    justify-content: center;
+}
+
 .clips {
     max-width: 100%;
-    width: 560px;
-    height: 315px;
+    max-height: 70vh;
+    width: 100rem;
+    height: 56.25rem;
 }
 
 .quote-section {
